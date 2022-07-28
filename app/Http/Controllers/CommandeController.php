@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Commande;
-use App\Models\Fournisseur;
+use App\Models\Produit;
 use App\Models\Client;
 use Illuminate\Http\Request;
 
@@ -27,9 +27,9 @@ class CommandeController extends Controller
      */
     public function create()
     {
-        $fournisseurs=Fournisseur::all();
+        $produits=Produit::all();
         $clients=Client::all();
-        return view('commandes.create', compact('fournisseurs','clients'));
+        return view('commandes.create', compact('produits','clients'));
     }
 
     /**

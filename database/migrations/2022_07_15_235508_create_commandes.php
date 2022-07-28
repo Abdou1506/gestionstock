@@ -16,6 +16,8 @@ class CreateCommandes extends Migration
         Schema::create('commandes', function (Blueprint $table) {
             $table->id();
             $table->date('date');
+            $table->string('total');
+            $table->string('adresse');
             $table->string('etat');
             $table->timestamps();
             $table->unsignedBigInteger('client_id');

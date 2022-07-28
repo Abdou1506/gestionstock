@@ -20,7 +20,10 @@ class Facturefournisseur extends Model
     {
         return $this->belongsTo(Fournisseur::class);
 
-        /**
+       
+        
+    }
+     /**
          * The produit that belong to the Facturefournisseur
          *
          * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
@@ -29,8 +32,6 @@ class Facturefournisseur extends Model
         {
             return $this->belongsToMany(Produit::class);
         }
-        
-    }
 
 
 }

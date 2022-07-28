@@ -10,6 +10,8 @@
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">date commande</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">Adresse</th>
                         <th scope="col">Etat</th>
                         <th scope="col">nom client</th>
                         <th scope="col">Action</th>
@@ -22,6 +24,8 @@
                         <tr>
                             <th scope="row">{{ $c->id }}</th>
                             <td>{{ $c->date }}</td>
+                            <td>{{ $c->total }}</td>
+                            <td>{{ $c->adresse }}</td>
                             <td>{{ $c->etat }}</td>
                             <td>{{$c->client_id}}</td>
                             <td class="btn-group">

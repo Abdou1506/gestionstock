@@ -30,7 +30,7 @@
         <td>{{$p->qte}}</td>
         <td>{{$p->prix_unitaire}}</td>
         <td>{{$p->categorie->nomcategorie}}</td>
-        <td>{{$p->fournisseur->nom}}</td>
+        <td>{{$p->fournisseur_id}}</td>
         <td class="btn-group">
           <form method="post" action="{{route('produits.destroy',$p->id)}}" onclick="return confirm('supprimer?')">
             @csrf

@@ -19,9 +19,9 @@ class CreateFactureclientsTable extends Migration
             $table->string('qte');
             $table->string('prix');
             $table->timestamps();
-            $table->unsignedBigInteger('fournisseur_id');
+            $table->unsignedBigInteger('client_id');
  
-            $table->foreign('fournisseur_id')->references('id')->on('fournisseurs');
+            $table->foreign('client_id')->references('id')->on('clients')->onDelete('cascade');
         });
     }
 

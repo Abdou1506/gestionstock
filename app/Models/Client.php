@@ -18,6 +18,6 @@ class Client extends Model
      */
     public function factureclient(): HasMany
     {
-        return $this->hasMany(F actureclient::class, 'foreign_key', 'local_key');
+        return $this->hasMany(Factureclient::class);
     }
 }

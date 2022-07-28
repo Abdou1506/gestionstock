@@ -40,7 +40,8 @@ class FacturefController extends Controller
      */
     public function store(Request $request)
     {
-        Facturefournisseur::create($request->all());
+    Facturefournisseur::create($request->all());
+       
         return redirect()->route('facturefournisseurs.index')->with('notice','ajout facture effectué avec succé');
    
     }

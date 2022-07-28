@@ -23,10 +23,10 @@
 
             </div>
             <div class="mb-3">
-                <label for="libelle" class="label-control">Nom fournisseur</label>
-                <select name="categorie_id" class="form-select" id="">
+                <label for="fournisseur_id" class="label-control">Nom fournisseur</label>
+                <select  class="form-select" id="fournisseur_id" name="fournisseur_id">
                     @foreach ($fournisseurs as $f)
-                        <option value="{{ $c->id }}">{{ $f->nom }}</option>
+                        <option value="{{ $f->id }}">{{ $f->nom }}</option>
                     @endforeach
     
                 </select>

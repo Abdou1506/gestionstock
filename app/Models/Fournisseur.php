@@ -17,7 +17,7 @@ class Fournisseur extends Model
     */
    public function facturefournisseur(): HasMany
    {
-       return $this->hasMany(Facturefournisseur::class, 'foreign_key', 'local_key');
+       return $this->hasMany(Facturefournisseur::class);
    }
 }
 

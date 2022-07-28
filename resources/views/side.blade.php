@@ -42,10 +42,10 @@
                </li>
               
                <li>
-                  <a href="{{route('factureclients.create')}}"> <span>nouvelle facture</span></a>
+                  <a href="{{route('factureclients.create')}}"> <span>nouvelle facture client</span></a>
                </li>
                <li>
-                  <a href="{{route('factureclients.index')}}"> <span>liste des factures</span></a>
+                  <a href="{{route('factureclients.index')}}"> <span>liste des factures client</span></a>
                </li>
                <li>
                   <a href="{{route('commandes.create')}}"> <span>nouvelle commande</span></a>
